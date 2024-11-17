@@ -99,6 +99,7 @@ Class | Method | HTTP request | Description
  - [DatasetOptional](docs/DatasetOptional.md)
  - [FinetuneReq](docs/FinetuneReq.md)
  - [FinetuneResp](docs/FinetuneResp.md)
+ - [Hyperparameters](docs/Hyperparameters.md)
  - [InferenceDeployReq](docs/InferenceDeployReq.md)
  - [InferenceDeployResp](docs/InferenceDeployResp.md)
  - [JobCallBackReq](docs/JobCallBackReq.md)

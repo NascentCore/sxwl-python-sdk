@@ -21,6 +21,7 @@ from openapi_client.models.dataset import Dataset
 from openapi_client.models.dataset_optional import DatasetOptional
 from openapi_client.models.finetune_req import FinetuneReq
 from openapi_client.models.finetune_resp import FinetuneResp
+from openapi_client.models.hyperparameters import Hyperparameters
 from openapi_client.models.inference_deploy_req import InferenceDeployReq
 from openapi_client.models.inference_deploy_resp import InferenceDeployResp
 from openapi_client.models.job_call_back_req import JobCallBackReq

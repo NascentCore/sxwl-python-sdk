@@ -10,6 +10,7 @@ docs/Dataset.md
 docs/DatasetOptional.md
 docs/FinetuneReq.md
 docs/FinetuneResp.md
+docs/Hyperparameters.md
 docs/InferenceDeployReq.md
 docs/InferenceDeployResp.md
 docs/JobCallBackReq.md
@@ -34,6 +35,7 @@ openapi_client/models/dataset.py
 openapi_client/models/dataset_optional.py
 openapi_client/models/finetune_req.py
 openapi_client/models/finetune_resp.py
+openapi_client/models/hyperparameters.py
 openapi_client/models/inference_deploy_req.py
 openapi_client/models/inference_deploy_resp.py
 openapi_client/models/job_call_back_req.py
@@ -49,19 +51,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_adapter.py
-test/test_adapter_optional.py
-test/test_base_resp.py
-test/test_dataset.py
-test/test_dataset_optional.py
-test/test_finetune_req.py
-test/test_finetune_resp.py
-test/test_inference_deploy_req.py
-test/test_inference_deploy_resp.py
-test/test_job_call_back_req.py
-test/test_job_create_req.py
-test/test_job_create_resp.py
-test/test_model.py
-test/test_model_optional.py
-test/test_scheduler_api_api.py
+test/test_hyperparameters.py
 tox.ini

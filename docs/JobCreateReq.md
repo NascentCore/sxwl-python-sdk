@@ -32,7 +32,6 @@ Name | Type | Description | Notes
 **trained_model_name** | **str** |  | [optional] 
 **run_command** | **str** |  | [optional] 
 **callback_url** | **str** |  | [optional] 
-**env** | **object** |  | [optional] 
 
 ## Example
 

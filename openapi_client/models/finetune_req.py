@@ -19,6 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
+from openapi_client.models.hyperparameters import Hyperparameters
 from typing import Optional, Set
 from typing_extensions import Self
 
@@ -43,11 +44,10 @@ class FinetuneReq(BaseModel):
     gpu_model: Optional[StrictStr] = None
     gpu_count: Optional[StrictInt] = None
     trained_model_name: Optional[StrictStr] = Field(default=None, alias="trainedModelName")
-    hyperparameters: Optional[Dict[str, Any]] = None
-    config: Optional[Mapstringinterface] = None
+    hyperparameters: Hyperparameters
     model_saved_type: StrictStr
     finetune_type: Optional[StrictStr] = None
-    __properties: ClassVar[List[str]] = ["model_id", "model_name", "model_path", "model_size", "model_is_public", "model_template", "model_meta", "model_category", "dataset_id", "dataset_name", "dataset_path", "dataset_size", "dataset_is_public", "cpod_id", "gpu_model", "gpu_count", "trainedModelName", "hyperparameters", "config", "model_saved_type", "finetune_type"]
+    __properties: ClassVar[List[str]] = ["model_id", "model_name", "model_path", "model_size", "model_is_public", "model_template", "model_meta", "model_category", "dataset_id", "dataset_name", "dataset_path", "dataset_size", "dataset_is_public", "cpod_id", "gpu_model", "gpu_count", "trainedModelName", "hyperparameters", "model_saved_type", "finetune_type"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -88,9 +88,9 @@ class FinetuneReq(BaseModel):
             exclude=excluded_fields,
             exclude_none=True,
         )
-        # override the default output from pydantic by calling `to_dict()` of config
-        if self.config:
-            _dict['config'] = self.config.to_dict()
+        # override the default output from pydantic by calling `to_dict()` of hyperparameters
+        if self.hyperparameters:
+            _dict['hyperparameters'] = self.hyperparameters.to_dict()
         return _dict
 
     @classmethod
@@ -120,8 +120,7 @@ class FinetuneReq(BaseModel):
             "gpu_model": obj.get("gpu_model"),
             "gpu_count": obj.get("gpu_count"),
             "trainedModelName": obj.get("trainedModelName"),
-            "hyperparameters": obj.get("hyperparameters"),
-            "config": Mapstringinterface.from_dict(obj["config"]) if obj.get("config") is not None else None,
+            "hyperparameters": Hyperparameters.from_dict(obj["hyperparameters"]) if obj.get("hyperparameters") is not None else None,
             "model_saved_type": obj.get("model_saved_type"),
             "finetune_type": obj.get("finetune_type")
         })

@@ -53,8 +53,7 @@ class JobCreateReq(BaseModel):
     trained_model_name: Optional[StrictStr] = Field(default=None, alias="trainedModelName")
     run_command: Optional[StrictStr] = Field(default=None, alias="runCommand")
     callback_url: Optional[StrictStr] = Field(default=None, alias="callbackUrl")
-    env: Optional[Dict[str, Any]] = None
-    __properties: ClassVar[List[str]] = ["cpod_id", "gpuNumber", "gpuType", "ckptPath", "ckptVol", "modelPath", "modelVol", "imagePath", "jobType", "stopType", "stopTime", "model_id", "model_name", "model_path", "model_size", "model_is_public", "model_template", "model_meta", "model_category", "dataset_id", "dataset_name", "dataset_path", "dataset_size", "dataset_is_public", "trainedModelName", "runCommand", "callbackUrl", "env"]
+    __properties: ClassVar[List[str]] = ["cpod_id", "gpuNumber", "gpuType", "ckptPath", "ckptVol", "modelPath", "modelVol", "imagePath", "jobType", "stopType", "stopTime", "model_id", "model_name", "model_path", "model_size", "model_is_public", "model_template", "model_meta", "model_category", "dataset_id", "dataset_name", "dataset_path", "dataset_size", "dataset_is_public", "trainedModelName", "runCommand", "callbackUrl"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -133,8 +132,7 @@ class JobCreateReq(BaseModel):
             "dataset_is_public": obj.get("dataset_is_public"),
             "trainedModelName": obj.get("trainedModelName"),
             "runCommand": obj.get("runCommand"),
-            "callbackUrl": obj.get("callbackUrl"),
-            "env": obj.get("env")
+            "callbackUrl": obj.get("callbackUrl")
         })
         return _obj
 

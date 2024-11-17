@@ -22,8 +22,7 @@ Name | Type | Description | Notes
 **gpu_model** | **str** |  | [optional] 
 **gpu_count** | **int** |  | [optional] 
 **trained_model_name** | **str** |  | [optional] 
-**hyperparameters** | **object** |  | [optional] 
-**config** | [**Mapstringinterface**](Mapstringinterface.md) |  | [optional] 
+**hyperparameters** | [**Hyperparameters**](Hyperparameters.md) |  | 
 **model_saved_type** | **str** |  | 
 **finetune_type** | **str** |  | [optional] 
 

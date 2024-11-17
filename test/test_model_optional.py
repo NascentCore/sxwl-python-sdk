@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.model_optional import ModelOptional
+from sxwl_client.models.model_optional import ModelOptional
 
 class TestModelOptional(unittest.TestCase):
     """ModelOptional unit test stubs"""

@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.inference_deploy_req import InferenceDeployReq
+from sxwl_client.models.inference_deploy_req import InferenceDeployReq
 
 # TODO update the JSON string below
 json = "{}"

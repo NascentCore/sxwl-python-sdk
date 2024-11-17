@@ -1,4 +1,4 @@
-# openapi_client.SchedulerApiApi
+# sxwl_client.SchedulerApiApi
 
 All URIs are relative to *http://localhost*
 
@@ -18,25 +18,25 @@ Method | HTTP request | Description
 
 
 ```python
-import openapi_client
-from openapi_client.models.finetune_req import FinetuneReq
-from openapi_client.models.finetune_resp import FinetuneResp
-from openapi_client.rest import ApiException
+import sxwl_client
+from sxwl_client.models.finetune_req import FinetuneReq
+from sxwl_client.models.finetune_resp import FinetuneResp
+from sxwl_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = sxwl_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with sxwl_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SchedulerApiApi(api_client)
+    api_instance = sxwl_client.SchedulerApiApi(api_client)
     sx_user_id = 'sx_user_id_example' # str | 
-    body = openapi_client.FinetuneReq() # FinetuneReq | 
+    body = sxwl_client.FinetuneReq() # FinetuneReq | 
 
     try:
         api_response = api_instance.finetune(sx_user_id, body)
@@ -86,25 +86,25 @@ No authorization required
 
 
 ```python
-import openapi_client
-from openapi_client.models.inference_deploy_req import InferenceDeployReq
-from openapi_client.models.inference_deploy_resp import InferenceDeployResp
-from openapi_client.rest import ApiException
+import sxwl_client
+from sxwl_client.models.inference_deploy_req import InferenceDeployReq
+from sxwl_client.models.inference_deploy_resp import InferenceDeployResp
+from sxwl_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = sxwl_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with sxwl_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SchedulerApiApi(api_client)
+    api_instance = sxwl_client.SchedulerApiApi(api_client)
     sx_user_id = 'sx_user_id_example' # str | 
-    body = openapi_client.InferenceDeployReq() # InferenceDeployReq | 
+    body = sxwl_client.InferenceDeployReq() # InferenceDeployReq | 
 
     try:
         api_response = api_instance.inference_deploy(sx_user_id, body)
@@ -154,25 +154,25 @@ No authorization required
 
 
 ```python
-import openapi_client
-from openapi_client.models.job_create_req import JobCreateReq
-from openapi_client.models.job_create_resp import JobCreateResp
-from openapi_client.rest import ApiException
+import sxwl_client
+from sxwl_client.models.job_create_req import JobCreateReq
+from sxwl_client.models.job_create_resp import JobCreateResp
+from sxwl_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = sxwl_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with sxwl_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SchedulerApiApi(api_client)
+    api_instance = sxwl_client.SchedulerApiApi(api_client)
     sx_user_id = 'sx_user_id_example' # str | 
-    body = openapi_client.JobCreateReq() # JobCreateReq | 
+    body = sxwl_client.JobCreateReq() # JobCreateReq | 
 
     try:
         api_response = api_instance.job_create(sx_user_id, body)

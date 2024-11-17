@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.finetune_req import FinetuneReq
+from sxwl_client.models.finetune_req import FinetuneReq
 
 class TestFinetuneReq(unittest.TestCase):
     """FinetuneReq unit test stubs"""
@@ -52,13 +52,19 @@ class TestFinetuneReq(unittest.TestCase):
                 gpu_model = '',
                 gpu_count = 56,
                 trained_model_name = '',
-                hyperparameters = None,
-                config = None,
+                hyperparameters = sxwl_client.models.hyperparameters.Hyperparameters(
+                    n_epochs = '', 
+                    batch_size = '', 
+                    learning_rate_multiplier = '', ),
                 model_saved_type = '',
                 finetune_type = ''
             )
         else:
             return FinetuneReq(
+                hyperparameters = sxwl_client.models.hyperparameters.Hyperparameters(
+                    n_epochs = '', 
+                    batch_size = '', 
+                    learning_rate_multiplier = '', ),
                 model_saved_type = '',
         )
         """

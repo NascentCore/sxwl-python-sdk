@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.finetune_resp import FinetuneResp
+from sxwl_client.models.finetune_resp import FinetuneResp
 
 class TestFinetuneResp(unittest.TestCase):
     """FinetuneResp unit test stubs"""

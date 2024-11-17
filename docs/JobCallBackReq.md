@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.job_call_back_req import JobCallBackReq
+from sxwl_client.models.job_call_back_req import JobCallBackReq
 
 # TODO update the JSON string below
 json = "{}"

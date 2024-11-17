@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.scheduler_api_api import SchedulerApiApi
+from sxwl_client.api.scheduler_api_api import SchedulerApiApi
 
 
 class TestSchedulerApiApi(unittest.TestCase):
@@ -26,20 +26,20 @@ class TestSchedulerApiApi(unittest.TestCase):
     def tearDown(self) -> None:
         pass
 
-    def test_finetune_handler(self) -> None:
-        """Test case for finetune_handler
+    def test_finetune(self) -> None:
+        """Test case for finetune
 
         """
         pass
 
-    def test_inference_deploy_handler(self) -> None:
-        """Test case for inference_deploy_handler
+    def test_inference_deploy(self) -> None:
+        """Test case for inference_deploy
 
         """
         pass
 
-    def test_job_create_handler(self) -> None:
-        """Test case for job_create_handler
+    def test_job_create(self) -> None:
+        """Test case for job_create
 
         """
         pass

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.hyperparameters import Hyperparameters
+from sxwl_client.models.hyperparameters import Hyperparameters
 
 # TODO update the JSON string below
 json = "{}"

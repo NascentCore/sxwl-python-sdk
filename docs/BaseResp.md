@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.base_resp import BaseResp
+from sxwl_client.models.base_resp import BaseResp
 
 # TODO update the JSON string below
 json = "{}"

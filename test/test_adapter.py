@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.adapter import Adapter
+from sxwl_client.models.adapter import Adapter
 
 class TestAdapter(unittest.TestCase):
     """Adapter unit test stubs"""

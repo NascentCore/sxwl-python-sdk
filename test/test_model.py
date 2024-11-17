@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.model import Model
+from sxwl_client.models.model import Model
 
 class TestModel(unittest.TestCase):
     """Model unit test stubs"""

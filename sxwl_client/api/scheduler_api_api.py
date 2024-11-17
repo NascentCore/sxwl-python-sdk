@@ -17,16 +17,16 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
 
 from pydantic import StrictStr
-from openapi_client.models.finetune_req import FinetuneReq
-from openapi_client.models.finetune_resp import FinetuneResp
-from openapi_client.models.inference_deploy_req import InferenceDeployReq
-from openapi_client.models.inference_deploy_resp import InferenceDeployResp
-from openapi_client.models.job_create_req import JobCreateReq
-from openapi_client.models.job_create_resp import JobCreateResp
+from sxwl_client.models.finetune_req import FinetuneReq
+from sxwl_client.models.finetune_resp import FinetuneResp
+from sxwl_client.models.inference_deploy_req import InferenceDeployReq
+from sxwl_client.models.inference_deploy_resp import InferenceDeployResp
+from sxwl_client.models.job_create_req import JobCreateReq
+from sxwl_client.models.job_create_resp import JobCreateResp
 
-from openapi_client.api_client import ApiClient, RequestSerialized
-from openapi_client.api_response import ApiResponse
-from openapi_client.rest import RESTResponseType
+from sxwl_client.api_client import ApiClient, RequestSerialized
+from sxwl_client.api_response import ApiResponse
+from sxwl_client.rest import RESTResponseType
 
 
 class SchedulerApiApi:

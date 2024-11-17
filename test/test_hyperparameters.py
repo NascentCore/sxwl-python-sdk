@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.hyperparameters import Hyperparameters
+from sxwl_client.models.hyperparameters import Hyperparameters
 
 class TestHyperparameters(unittest.TestCase):
     """Hyperparameters unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.inference_deploy_req import InferenceDeployReq
+from sxwl_client.models.inference_deploy_req import InferenceDeployReq
 
 class TestInferenceDeployReq(unittest.TestCase):
     """InferenceDeployReq unit test stubs"""

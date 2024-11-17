@@ -36,7 +36,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.job_create_req import JobCreateReq
+from sxwl_client.models.job_create_req import JobCreateReq
 
 # TODO update the JSON string below
 json = "{}"

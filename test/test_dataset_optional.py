@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.dataset_optional import DatasetOptional
+from sxwl_client.models.dataset_optional import DatasetOptional
 
 class TestDatasetOptional(unittest.TestCase):
     """DatasetOptional unit test stubs"""

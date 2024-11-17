@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.model_optional import ModelOptional
+from sxwl_client.models.model_optional import ModelOptional
 
 # TODO update the JSON string below
 json = "{}"

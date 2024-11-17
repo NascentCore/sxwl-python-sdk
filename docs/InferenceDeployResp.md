@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.inference_deploy_resp import InferenceDeployResp
+from sxwl_client.models.inference_deploy_resp import InferenceDeployResp
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.job_create_req import JobCreateReq
+from sxwl_client.models.job_create_req import JobCreateReq
 
 class TestJobCreateReq(unittest.TestCase):
     """JobCreateReq unit test stubs"""
@@ -61,8 +61,7 @@ class TestJobCreateReq(unittest.TestCase):
                 dataset_is_public = True,
                 trained_model_name = '',
                 run_command = '',
-                callback_url = '',
-                env = None
+                callback_url = ''
             )
         else:
             return JobCreateReq(

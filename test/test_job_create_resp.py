@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.job_create_resp import JobCreateResp
+from sxwl_client.models.job_create_resp import JobCreateResp
 
 class TestJobCreateResp(unittest.TestCase):
     """JobCreateResp unit test stubs"""

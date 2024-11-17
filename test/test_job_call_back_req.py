@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.job_call_back_req import JobCallBackReq
+from sxwl_client.models.job_call_back_req import JobCallBackReq
 
 class TestJobCallBackReq(unittest.TestCase):
     """JobCallBackReq unit test stubs"""

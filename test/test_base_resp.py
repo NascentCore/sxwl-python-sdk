@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.base_resp import BaseResp
+from sxwl_client.models.base_resp import BaseResp
 
 class TestBaseResp(unittest.TestCase):
     """BaseResp unit test stubs"""

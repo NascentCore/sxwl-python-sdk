@@ -20,7 +20,7 @@ from setuptools import setup, find_packages  # noqa: H301
 #
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
-NAME = "openapi-client"
+NAME = "sxwl-client"
 VERSION = "1.0.0"
 PYTHON_REQUIRES = ">= 3.8"
 REQUIRES = [
@@ -45,5 +45,5 @@ setup(
     long_description="""\
     算想云对开发者提供的API
     """,  # noqa: E501
-    package_data={"openapi_client": ["py.typed"]},
+    package_data={"sxwl_client": ["py.typed"]},
 )

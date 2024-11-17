@@ -43,7 +43,7 @@ class SchedulerApiApi:
 
 
     @validate_call
-    def finetune_handler(
+    def finetune(
         self,
         sx_user_id: StrictStr,
         body: FinetuneReq,
@@ -60,7 +60,7 @@ class SchedulerApiApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> FinetuneResp:
-        """finetune_handler
+        """finetune
 
 
         :param sx_user_id: (required)
@@ -89,7 +89,7 @@ class SchedulerApiApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._finetune_handler_serialize(
+        _param = self._finetune_serialize(
             sx_user_id=sx_user_id,
             body=body,
             _request_auth=_request_auth,
@@ -113,7 +113,7 @@ class SchedulerApiApi:
 
 
     @validate_call
-    def finetune_handler_with_http_info(
+    def finetune_with_http_info(
         self,
         sx_user_id: StrictStr,
         body: FinetuneReq,
@@ -130,7 +130,7 @@ class SchedulerApiApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[FinetuneResp]:
-        """finetune_handler
+        """finetune
 
 
         :param sx_user_id: (required)
@@ -159,7 +159,7 @@ class SchedulerApiApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._finetune_handler_serialize(
+        _param = self._finetune_serialize(
             sx_user_id=sx_user_id,
             body=body,
             _request_auth=_request_auth,
@@ -183,7 +183,7 @@ class SchedulerApiApi:
 
 
     @validate_call
-    def finetune_handler_without_preload_content(
+    def finetune_without_preload_content(
         self,
         sx_user_id: StrictStr,
         body: FinetuneReq,
@@ -200,7 +200,7 @@ class SchedulerApiApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """finetune_handler
+        """finetune
 
 
         :param sx_user_id: (required)
@@ -229,7 +229,7 @@ class SchedulerApiApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._finetune_handler_serialize(
+        _param = self._finetune_serialize(
             sx_user_id=sx_user_id,
             body=body,
             _request_auth=_request_auth,
@@ -248,7 +248,7 @@ class SchedulerApiApi:
         return response_data.response
 
 
-    def _finetune_handler_serialize(
+    def _finetune_serialize(
         self,
         sx_user_id,
         body,
@@ -328,7 +328,7 @@ class SchedulerApiApi:
 
 
     @validate_call
-    def inference_deploy_handler(
+    def inference_deploy(
         self,
         sx_user_id: StrictStr,
         body: InferenceDeployReq,
@@ -345,7 +345,7 @@ class SchedulerApiApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> InferenceDeployResp:
-        """inference_deploy_handler
+        """inference_deploy
 
 
         :param sx_user_id: (required)
@@ -374,7 +374,7 @@ class SchedulerApiApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._inference_deploy_handler_serialize(
+        _param = self._inference_deploy_serialize(
             sx_user_id=sx_user_id,
             body=body,
             _request_auth=_request_auth,
@@ -398,7 +398,7 @@ class SchedulerApiApi:
 
 
     @validate_call
-    def inference_deploy_handler_with_http_info(
+    def inference_deploy_with_http_info(
         self,
         sx_user_id: StrictStr,
         body: InferenceDeployReq,
@@ -415,7 +415,7 @@ class SchedulerApiApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[InferenceDeployResp]:
-        """inference_deploy_handler
+        """inference_deploy
 
 
         :param sx_user_id: (required)
@@ -444,7 +444,7 @@ class SchedulerApiApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._inference_deploy_handler_serialize(
+        _param = self._inference_deploy_serialize(
             sx_user_id=sx_user_id,
             body=body,
             _request_auth=_request_auth,
@@ -468,7 +468,7 @@ class SchedulerApiApi:
 
 
     @validate_call
-    def inference_deploy_handler_without_preload_content(
+    def inference_deploy_without_preload_content(
         self,
         sx_user_id: StrictStr,
         body: InferenceDeployReq,
@@ -485,7 +485,7 @@ class SchedulerApiApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """inference_deploy_handler
+        """inference_deploy
 
 
         :param sx_user_id: (required)
@@ -514,7 +514,7 @@ class SchedulerApiApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._inference_deploy_handler_serialize(
+        _param = self._inference_deploy_serialize(
             sx_user_id=sx_user_id,
             body=body,
             _request_auth=_request_auth,
@@ -533,7 +533,7 @@ class SchedulerApiApi:
         return response_data.response
 
 
-    def _inference_deploy_handler_serialize(
+    def _inference_deploy_serialize(
         self,
         sx_user_id,
         body,
@@ -613,7 +613,7 @@ class SchedulerApiApi:
 
 
     @validate_call
-    def job_create_handler(
+    def job_create(
         self,
         sx_user_id: StrictStr,
         body: JobCreateReq,
@@ -630,7 +630,7 @@ class SchedulerApiApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> JobCreateResp:
-        """job_create_handler
+        """job_create
 
 
         :param sx_user_id: (required)
@@ -659,7 +659,7 @@ class SchedulerApiApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._job_create_handler_serialize(
+        _param = self._job_create_serialize(
             sx_user_id=sx_user_id,
             body=body,
             _request_auth=_request_auth,
@@ -683,7 +683,7 @@ class SchedulerApiApi:
 
 
     @validate_call
-    def job_create_handler_with_http_info(
+    def job_create_with_http_info(
         self,
         sx_user_id: StrictStr,
         body: JobCreateReq,
@@ -700,7 +700,7 @@ class SchedulerApiApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[JobCreateResp]:
-        """job_create_handler
+        """job_create
 
 
         :param sx_user_id: (required)
@@ -729,7 +729,7 @@ class SchedulerApiApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._job_create_handler_serialize(
+        _param = self._job_create_serialize(
             sx_user_id=sx_user_id,
             body=body,
             _request_auth=_request_auth,
@@ -753,7 +753,7 @@ class SchedulerApiApi:
 
 
     @validate_call
-    def job_create_handler_without_preload_content(
+    def job_create_without_preload_content(
         self,
         sx_user_id: StrictStr,
         body: JobCreateReq,
@@ -770,7 +770,7 @@ class SchedulerApiApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """job_create_handler
+        """job_create
 
 
         :param sx_user_id: (required)
@@ -799,7 +799,7 @@ class SchedulerApiApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._job_create_handler_serialize(
+        _param = self._job_create_serialize(
             sx_user_id=sx_user_id,
             body=body,
             _request_auth=_request_auth,
@@ -818,7 +818,7 @@ class SchedulerApiApi:
         return response_data.response
 
 
-    def _job_create_handler_serialize(
+    def _job_create_serialize(
         self,
         sx_user_id,
         body,

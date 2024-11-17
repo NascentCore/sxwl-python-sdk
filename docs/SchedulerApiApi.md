@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**finetune_handler**](SchedulerApiApi.md#finetune_handler) | **POST** /api/job/finetune | 
-[**inference_deploy_handler**](SchedulerApiApi.md#inference_deploy_handler) | **POST** /api/job/inference | 
-[**job_create_handler**](SchedulerApiApi.md#job_create_handler) | **POST** /api/job/training | 
+[**finetune**](SchedulerApiApi.md#finetune) | **POST** /api/job/finetune | 
+[**inference_deploy**](SchedulerApiApi.md#inference_deploy) | **POST** /api/job/inference | 
+[**job_create**](SchedulerApiApi.md#job_create) | **POST** /api/job/training | 
 
 
-# **finetune_handler**
-> FinetuneResp finetune_handler(sx_user_id, body)
+# **finetune**
+> FinetuneResp finetune(sx_user_id, body)
 
 
 
@@ -39,11 +39,11 @@ with openapi_client.ApiClient(configuration) as api_client:
     body = openapi_client.FinetuneReq() # FinetuneReq | 
 
     try:
-        api_response = api_instance.finetune_handler(sx_user_id, body)
-        print("The response of SchedulerApiApi->finetune_handler:\n")
+        api_response = api_instance.finetune(sx_user_id, body)
+        print("The response of SchedulerApiApi->finetune:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling SchedulerApiApi->finetune_handler: %s\n" % e)
+        print("Exception when calling SchedulerApiApi->finetune: %s\n" % e)
 ```
 
 
@@ -77,8 +77,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **inference_deploy_handler**
-> InferenceDeployResp inference_deploy_handler(sx_user_id, body)
+# **inference_deploy**
+> InferenceDeployResp inference_deploy(sx_user_id, body)
 
 
 
@@ -107,11 +107,11 @@ with openapi_client.ApiClient(configuration) as api_client:
     body = openapi_client.InferenceDeployReq() # InferenceDeployReq | 
 
     try:
-        api_response = api_instance.inference_deploy_handler(sx_user_id, body)
-        print("The response of SchedulerApiApi->inference_deploy_handler:\n")
+        api_response = api_instance.inference_deploy(sx_user_id, body)
+        print("The response of SchedulerApiApi->inference_deploy:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling SchedulerApiApi->inference_deploy_handler: %s\n" % e)
+        print("Exception when calling SchedulerApiApi->inference_deploy: %s\n" % e)
 ```
 
 
@@ -145,8 +145,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **job_create_handler**
-> JobCreateResp job_create_handler(sx_user_id, body)
+# **job_create**
+> JobCreateResp job_create(sx_user_id, body)
 
 
 
@@ -175,11 +175,11 @@ with openapi_client.ApiClient(configuration) as api_client:
     body = openapi_client.JobCreateReq() # JobCreateReq | 
 
     try:
-        api_response = api_instance.job_create_handler(sx_user_id, body)
-        print("The response of SchedulerApiApi->job_create_handler:\n")
+        api_response = api_instance.job_create(sx_user_id, body)
+        print("The response of SchedulerApiApi->job_create:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling SchedulerApiApi->job_create_handler: %s\n" % e)
+        print("Exception when calling SchedulerApiApi->job_create: %s\n" % e)
 ```
 
 

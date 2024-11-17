@@ -71,11 +71,11 @@ with openapi_client.ApiClient(configuration) as api_client:
     body = openapi_client.FinetuneReq() # FinetuneReq | 
 
     try:
-        api_response = api_instance.finetune_handler(sx_user_id, body)
-        print("The response of SchedulerApiApi->finetune_handler:\n")
+        api_response = api_instance.finetune(sx_user_id, body)
+        print("The response of SchedulerApiApi->finetune:\n")
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling SchedulerApiApi->finetune_handler: %s\n" % e)
+        print("Exception when calling SchedulerApiApi->finetune: %s\n" % e)
 
 ```
 
@@ -85,9 +85,9 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*SchedulerApiApi* | [**finetune_handler**](docs/SchedulerApiApi.md#finetune_handler) | **POST** /api/job/finetune | 
-*SchedulerApiApi* | [**inference_deploy_handler**](docs/SchedulerApiApi.md#inference_deploy_handler) | **POST** /api/job/inference | 
-*SchedulerApiApi* | [**job_create_handler**](docs/SchedulerApiApi.md#job_create_handler) | **POST** /api/job/training | 
+*SchedulerApiApi* | [**finetune**](docs/SchedulerApiApi.md#finetune) | **POST** /api/job/finetune | 
+*SchedulerApiApi* | [**inference_deploy**](docs/SchedulerApiApi.md#inference_deploy) | **POST** /api/job/inference | 
+*SchedulerApiApi* | [**job_create**](docs/SchedulerApiApi.md#job_create) | **POST** /api/job/training | 
 
 
 ## Documentation For Models

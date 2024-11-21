@@ -16,12 +16,16 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'  # 根据需要调整 Python 版本
+        python-version: '3.9'  # 根据需求调整 Python 版本
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install build twine pytest  # 确保安装了所有必要模块
+        pip install build twine pytest
+        # 如果有 requirements.txt 文件，优先使用
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        # 如果有其他依赖未在 requirements.txt 中列出，可以手动安装
+        pip install pydantic
 
     - name: Debug Environment (Optional)
       run: |

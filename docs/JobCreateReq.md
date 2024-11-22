@@ -10,8 +10,8 @@ Name | Type | Description | Notes
 **gpu_type** | **str** |  | 
 **ckpt_path** | **str** |  | 
 **ckpt_vol** | **int** |  | 
-**model_path** | **str** |  | 
-**model_vol** | **int** |  | 
+**created_model_path** | **str** |  | 
+**created_model_vol** | **int** |  | 
 **image_path** | **str** |  | 
 **job_type** | **str** |  | 
 **stop_type** | **int** |  | [optional] 

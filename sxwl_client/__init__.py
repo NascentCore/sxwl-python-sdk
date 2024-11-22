@@ -14,7 +14,7 @@
 """  # noqa: E501
 
 
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 # import apis into sdk package
 from sxwl_client.api.scheduler_api_api import SchedulerApiApi

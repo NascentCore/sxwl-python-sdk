@@ -31,8 +31,8 @@ class JobCreateReq(BaseModel):
     gpu_type: StrictStr = Field(alias="gpuType")
     ckpt_path: StrictStr = Field(alias="ckptPath")
     ckpt_vol: StrictInt = Field(alias="ckptVol")
-    model_path: StrictStr = Field(alias="modelPath")
-    model_vol: StrictInt = Field(alias="modelVol")
+    created_model_path: StrictStr
+    created_model_vol: StrictInt
     image_path: StrictStr = Field(alias="imagePath")
     job_type: StrictStr = Field(alias="jobType")
     stop_type: Optional[StrictInt] = Field(default=None, alias="stopType")
@@ -53,7 +53,7 @@ class JobCreateReq(BaseModel):
     trained_model_name: Optional[StrictStr] = Field(default=None, alias="trainedModelName")
     run_command: Optional[StrictStr] = Field(default=None, alias="runCommand")
     callback_url: Optional[StrictStr] = Field(default=None, alias="callbackUrl")
-    __properties: ClassVar[List[str]] = ["cpod_id", "gpuNumber", "gpuType", "ckptPath", "ckptVol", "modelPath", "modelVol", "imagePath", "jobType", "stopType", "stopTime", "model_id", "model_name", "model_path", "model_size", "model_is_public", "model_template", "model_meta", "model_category", "dataset_id", "dataset_name", "dataset_path", "dataset_size", "dataset_is_public", "trainedModelName", "runCommand", "callbackUrl"]
+    __properties: ClassVar[List[str]] = ["cpod_id", "gpuNumber", "gpuType", "ckptPath", "ckptVol", "created_model_path", "created_model_vol", "imagePath", "jobType", "stopType", "stopTime", "model_id", "model_name", "model_path", "model_size", "model_is_public", "model_template", "model_meta", "model_category", "dataset_id", "dataset_name", "dataset_path", "dataset_size", "dataset_is_public", "trainedModelName", "runCommand", "callbackUrl"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -111,8 +111,8 @@ class JobCreateReq(BaseModel):
             "gpuType": obj.get("gpuType"),
             "ckptPath": obj.get("ckptPath"),
             "ckptVol": obj.get("ckptVol"),
-            "modelPath": obj.get("modelPath"),
-            "modelVol": obj.get("modelVol"),
+            "created_model_path": obj.get("created_model_path"),
+            "created_model_vol": obj.get("created_model_vol"),
             "imagePath": obj.get("imagePath"),
             "jobType": obj.get("jobType"),
             "stopType": obj.get("stopType"),

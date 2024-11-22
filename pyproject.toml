@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sxwl_client"
-version = "1.0.1"
+version = "1.0.2"
 description = "SDK"
 authors = ["OpenAPI Generator Community <team@openapitools.org>"]
 license = "NoLicense"

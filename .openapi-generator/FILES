@@ -14,6 +14,9 @@ docs/FinetuneReq.md
 docs/FinetuneResp.md
 docs/FinetuneStatusReq.md
 docs/FinetuneStatusResp.md
+docs/GPUJobStatusReq.md
+docs/GPUJobStatusResp.md
+docs/GPUJobStopResp.md
 docs/Hyperparameters.md
 docs/InferenceDeployReq.md
 docs/InferenceDeployResp.md
@@ -50,6 +53,9 @@ sxwl_client/models/finetune_req.py
 sxwl_client/models/finetune_resp.py
 sxwl_client/models/finetune_status_req.py
 sxwl_client/models/finetune_status_resp.py
+sxwl_client/models/gpu_job_status_req.py
+sxwl_client/models/gpu_job_status_resp.py
+sxwl_client/models/gpu_job_stop_resp.py
 sxwl_client/models/hyperparameters.py
 sxwl_client/models/inference_deploy_req.py
 sxwl_client/models/inference_deploy_resp.py
@@ -65,4 +71,7 @@ sxwl_client/py.typed
 sxwl_client/rest.py
 test-requirements.txt
 test/__init__.py
+test/test_gpu_job_status_req.py
+test/test_gpu_job_status_resp.py
+test/test_gpu_job_stop_resp.py
 tox.ini

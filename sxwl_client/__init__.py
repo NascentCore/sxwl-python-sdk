@@ -14,7 +14,7 @@
 """  # noqa: E501
 
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 
 # import apis into sdk package
 from sxwl_client.api.scheduler_api_api import SchedulerApiApi
@@ -42,6 +42,9 @@ from sxwl_client.models.finetune_req import FinetuneReq
 from sxwl_client.models.finetune_resp import FinetuneResp
 from sxwl_client.models.finetune_status_req import FinetuneStatusReq
 from sxwl_client.models.finetune_status_resp import FinetuneStatusResp
+from sxwl_client.models.gpu_job_status_req import GPUJobStatusReq
+from sxwl_client.models.gpu_job_status_resp import GPUJobStatusResp
+from sxwl_client.models.gpu_job_stop_resp import GPUJobStopResp
 from sxwl_client.models.hyperparameters import Hyperparameters
 from sxwl_client.models.inference_deploy_req import InferenceDeployReq
 from sxwl_client.models.inference_deploy_resp import InferenceDeployResp

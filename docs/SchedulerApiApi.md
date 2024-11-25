@@ -8,6 +8,8 @@ Method | HTTP request | Description
 [**dataset_by_name**](SchedulerApiApi.md#dataset_by_name) | **GET** /api/resource/dataset/name | 
 [**finetune**](SchedulerApiApi.md#finetune) | **POST** /api/job/finetune | 
 [**finetune_status**](SchedulerApiApi.md#finetune_status) | **GET** /api/job/finetune/status | 
+[**gpu_job_status**](SchedulerApiApi.md#gpu_job_status) | **GET** /api/job/gpu/status | 
+[**gpu_job_stop**](SchedulerApiApi.md#gpu_job_stop) | **POST** /api/job/gpu/stop | 
 [**inference_deploy**](SchedulerApiApi.md#inference_deploy) | **POST** /api/job/inference | 
 [**inference_status**](SchedulerApiApi.md#inference_status) | **GET** /api/job/inference/status | 
 [**inference_stop**](SchedulerApiApi.md#inference_stop) | **POST** /api/job/inference/stop | 
@@ -270,6 +272,138 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | A successful response. |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **gpu_job_status**
+> GPUJobStatusResp gpu_job_status(sx_user_id, job_id)
+
+
+
+### Example
+
+
+```python
+import sxwl_client
+from sxwl_client.models.gpu_job_status_resp import GPUJobStatusResp
+from sxwl_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = sxwl_client.Configuration(
+    host = "http://localhost"
+)
+
+
+# Enter a context with an instance of the API client
+with sxwl_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = sxwl_client.SchedulerApiApi(api_client)
+    sx_user_id = 'sx_user_id_example' # str | 
+    job_id = 'job_id_example' # str | 
+
+    try:
+        api_response = api_instance.gpu_job_status(sx_user_id, job_id)
+        print("The response of SchedulerApiApi->gpu_job_status:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling SchedulerApiApi->gpu_job_status: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **sx_user_id** | **str**|  | 
+ **job_id** | **str**|  | 
+
+### Return type
+
+[**GPUJobStatusResp**](GPUJobStatusResp.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | A successful response. |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **gpu_job_stop**
+> BaseResp gpu_job_stop(job_id)
+
+
+
+### Example
+
+
+```python
+import sxwl_client
+from sxwl_client.models.base_resp import BaseResp
+from sxwl_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = sxwl_client.Configuration(
+    host = "http://localhost"
+)
+
+
+# Enter a context with an instance of the API client
+with sxwl_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = sxwl_client.SchedulerApiApi(api_client)
+    job_id = 'job_id_example' # str | 
+
+    try:
+        api_response = api_instance.gpu_job_stop(job_id)
+        print("The response of SchedulerApiApi->gpu_job_stop:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling SchedulerApiApi->gpu_job_stop: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **job_id** | **str**|  | 
+
+### Return type
+
+[**BaseResp**](BaseResp.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
  - **Accept**: application/json
 
 ### HTTP response details
